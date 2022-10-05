@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/avatarImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="16dp"
+                android:onClick="OnSetAvatarButton"
+                tools:srcCompat="@drawable/hitbox"
+                android:contentDescription="@string/todo1" />
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="@string/soccer_team_manager1"
+                android:textStyle="bold"
+                app:fontFamily="monospace"
+                tools:textSize="18sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/teamNameField"
+                    android:layout_width="228dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/please_enter_a_team2"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:singleLine="true"
+                    android:textColorHint="#546E7A"
+                    app:fontFamily="monospace"
+                    tools:singleLine="true"
+                    tools:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/teamNameTextField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="@string/team_name2"
+                    app:fontFamily="monospace"
+                    tools:hint="Veillez ajouter un nom"
+                    tools:textSize="12sp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/teamAddressField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:autoSizeTextType="uniform"
+                    android:autofillHints=""
+                    android:ems="14"
+                    android:gravity="center_horizontal"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:textColorHint="#546E7A"
+                    app:fontFamily="monospace"
+                    tools:hint="(Please enter a ZIP Code)"
+                    tools:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/teamAddressTextField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:textColorHint="#546E7A"
+                    app:fontFamily="monospace"
+                    tools:hint="Team Address" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"
+                android:onClick="OnOpenInGoogleMaps"
+                tools:text="OPEN IN GOOGLE MAPS" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
